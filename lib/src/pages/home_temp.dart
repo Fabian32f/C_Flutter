@@ -6,7 +6,7 @@ class HomePageTemp extends StatelessWidget{
 
 
 @override
-Widget build(BuildContext context) {
+Widget build(BuildContext context) { 
   return Scaffold(
     appBar: AppBar(
       title: Text('Componentes Temp'),
@@ -38,15 +38,24 @@ Widget build(BuildContext context) {
     
   List<Widget> _crearItemsCorta(){
 
-      var widgets = opciones.map((item){
+       return  opciones.map((item){
 
-          return ListTile(
-            title: Text(item + '!'),
+          return Column(
+            children: [
+              ListTile(
+                title: Text(item + '!'),
+             subtitle:Text('Cualquier cosa'),
+             leading: Icon(Icons.account_balance_wallet),
+             trailing: Icon(Icons.keyboard_arrow_right),
+             onTap: (){},
+              ),
+              Divider()
+            ],
           );
 
       }).toList();
 
-      return widgets;
+    
 
   }
  
