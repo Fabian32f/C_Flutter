@@ -42,7 +42,9 @@ class _AnimatedconPageState extends State<AnimatedconPage> {
       _width = random.nextInt(300).toDouble();
       _height = random.nextInt(300).toDouble();
       _color = Color.fromRGBO(
-          random.nextInt(255), random.nextInt(255), random.nextInt(255), 1);
+          random.nextInt(255), 
+          random.nextInt(255), 
+          random.nextInt(255), 1);
       _borde = BorderRadius.circular(random.nextInt(100).toDouble());
     });
   }

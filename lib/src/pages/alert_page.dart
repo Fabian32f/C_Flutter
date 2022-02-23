@@ -5,14 +5,14 @@ class AlertPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Esta es la pagina de alerta "),
+        title: Text("!!Alert Page!!"),
       ),
       body: Center(
         child: ElevatedButton(
-          child: Text("Mostrar alerta"),
+          child: Text("Mostrar Alerta"),
           onPressed: () => _mostrarAler(context),
           style: ElevatedButton.styleFrom(
-              primary: Colors.red, shape: StadiumBorder()),
+              primary: Color.fromARGB(255, 129, 9, 9), shape: StadiumBorder()),
         ),
       ),
       floatingActionButton: FloatingActionButton(
@@ -26,16 +26,16 @@ class AlertPage extends StatelessWidget {
 
   void _mostrarAler(BuildContext context) {
     showDialog(
-        context: context,
+        context: context,   
         barrierDismissible: true,
         builder: (context) {
           return AlertDialog(
             shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(20.0)),
-            title: Text("Titulo"),
+                borderRadius: BorderRadius.circular(30.0)),
+            title: Text("Título:"),
             content: Column(
               mainAxisSize: MainAxisSize.min,
-              children: <Widget>[Text("Contenido"), FlutterLogo(size: 100.0)],
+              children: <Widget>[Text("Este es el contenido de la caja de la Alerta"), FlutterLogo(size: 100.0)],
             ),
             actions: <Widget>[
               TextButton(

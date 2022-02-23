@@ -31,7 +31,7 @@ class HomePage extends StatelessWidget {
       final widgetTemp = ListTile(
         title: Text(opt['texto']),
         leading: getIcon(opt['icon']),
-        trailing: Icon(Icons.keyboard_arrow_right, color: Colors.amber[300]),
+        trailing: Icon(Icons.keyboard_arrow_right, color: Color.fromARGB(255, 26, 11, 243)),
         onTap: () {
           Navigator.pushNamed(context, opt['ruta']);
 

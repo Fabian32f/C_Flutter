@@ -12,7 +12,7 @@ final _icons = <String, IconData>{
 };
 
 Icon getIcon(String nombreIcono){
-    return Icon( _icons[nombreIcono], color: Colors.blue,);
+    return Icon( _icons[nombreIcono], color: Color.fromARGB(255, 46, 76, 209),);
 }
 
  

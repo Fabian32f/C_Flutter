@@ -21,8 +21,8 @@ class CardPage extends StatelessWidget {
       child: Column(children: <Widget>[
         const ListTile(
           leading: Icon(Icons.photo_album, color: Colors.blue),
-          title: Text("Tarjeta titulo"),
-          subtitle: Text("Holaaaaaaaaaaaaaa"),
+          title: Text("Soy el tirulo de esta Targeta"),
+          subtitle: Text("La gente desperdicia mucho tiempo, y luego quieren más. Desean más horas en sus días, más días en sus años, más años en sus vidas"),
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.end,
@@ -48,12 +48,12 @@ class CardPage extends StatelessWidget {
         children: <Widget>[
           FadeInImage(
             image: NetworkImage(
-                'https://fotoarte.com.uy/wp-content/uploads/2019/03/Landscape-fotoarte.jpg'),
+                'https://media.baamboozle.com/uploads/images/36822/1602508155_97832'),
             placeholder: AssetImage('assets/cargando.gif'),
             height: 250.0,
             fit: BoxFit.cover,
           ),
-          Container(padding: EdgeInsets.all(10.0), child: Text("nose"))
+          Container(padding: EdgeInsets.all(10.0), child: Text("¿Acaso el único propósito de la hoja es caer?"))
         ],
       ),
     );

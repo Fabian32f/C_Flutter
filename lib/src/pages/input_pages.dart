@@ -23,7 +23,7 @@ class _InputPageState extends State<InputPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Inputs"),
+        title: Text("Inputs de texto"),
       ),
       body: ListView(
         padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 20.0),
@@ -152,7 +152,7 @@ class _InputPageState extends State<InputPage> {
         context: context,
         firstDate: new DateTime(2019),
         initialDate: new DateTime.now(),
-        lastDate: new DateTime(2024),
+        lastDate: new DateTime(2025),
         locale: Locale('es', 'ES'));
     if (pick != null) {
       setState(() {
