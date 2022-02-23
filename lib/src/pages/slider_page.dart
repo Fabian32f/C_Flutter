@@ -32,7 +32,7 @@ class _SliderPageState extends State<SliderPage> {
 
   Widget _crearSlider() {
     return Slider(
-        activeColor: Colors.indigo[400],
+        activeColor: Color.fromARGB(255, 14, 45, 216),
         label: "Tamaño de la imagen",
         value: _valSlider,
         min: 10.0,
@@ -49,7 +49,7 @@ class _SliderPageState extends State<SliderPage> {
   Widget _crearImagen() {
     return Image(
       image: NetworkImage(
-          'https://i1.wp.com/wipy.tv/wp-content/uploads/2020/08/ghost-rider-contaria-con-deadpool.jpg?fit=1000%2C600&ssl=1'),
+          'https://support-leagueoflegends.riotgames.com/hc/article_attachments/4409076154643/ArcaneCapsule.png'),
       width: _valSlider,
       fit: BoxFit.contain,
     );
