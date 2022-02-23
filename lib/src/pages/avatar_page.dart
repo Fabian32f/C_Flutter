@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 
 class AvatarPage extends StatelessWidget {
-  @override
+
+  static final pageName = 'avatar';  
+
+  @override 
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Pagina del avatar "),
+        title: Text("Pagina del Avatar "),
         actions: <Widget>[
           Container(
             padding: EdgeInsets.all(5.0),
@@ -18,7 +21,7 @@ class AvatarPage extends StatelessWidget {
           Container(
             margin: EdgeInsets.only(right: 10.0),
             child: CircleAvatar(
-              child: Text("FK"),
+              child: Text("FKA"),
               backgroundColor: Color.fromARGB(255, 5, 46, 228),
             ),
           )

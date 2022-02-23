@@ -13,9 +13,9 @@ class _InputPageState extends State<InputPage> {
 
   List<String> _poderes = [
     'Volar',
-    'Rayos laser',
-    'Super aliento',
-    'Super fuerza'
+    'Rayos Laser',
+    'Super Aliento',
+    'Super Fuerza'
   ];
 
   TextEditingController _campoFecha = new TextEditingController();

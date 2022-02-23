@@ -16,7 +16,7 @@ class AlertPage extends StatelessWidget {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.abc),
+        child: Icon(Icons.add_location),
         onPressed: () {
           Navigator.pop(context);
         },
